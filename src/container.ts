@@ -3,6 +3,7 @@ import { PrismaWebinarRepository } from 'src/webinars/adapters/webinar-repositor
 import { ChangeSeats } from 'src/webinars/use-cases/change-seats';
 
 export class AppContainer {
+  [x: string]: any;
   private prismaClient!: PrismaClient;
   private webinarRepository!: PrismaWebinarRepository;
   private changeSeatsUseCase!: ChangeSeats;
